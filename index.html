@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介サイト</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s, transform 1s;
+    }
+    h2 {
+      color: #666;
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 1s 0.5s, transform 1s 0.5s;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .fade-in {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>自己紹介</h1>
+    <h2>基本情報</h2>
+    <p>名前: [あなたの名前]</p>
+    <p>年齢: [あなたの年齢]</p>
+    <p>出身地: [あなたの出身地]</p>
+
+    <h2>経歴</h2>
+    <ul>
+      <li>[あなたの経歴1]</li>
+      <li>[あなたの経歴2]</li>
+      <li>[あなたの経歴3]</li>
+    </ul>
+
+    <h2>スキル</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>Rust</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>HTML/CSS</li>
+    </ul>
+
+    <h2>コードサンプル</h2>
+    <p>コードサンプルは別のファイルに記載されています。</p>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/rust.js"></script>
+  <script src="js/c.js"></script>
+  <script src="js/cpp.js"></script>
+</body>
+</html>
